@@ -7,6 +7,18 @@
     <title>Select Studios</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script src="index.js"></script>
+
+        <script type="text/javascript">
+            (function(){
+        emailjs.init("xQSpdFB7w9odOlwhR");
+    })();
+  </script>
+
   </head>
 
   <body>
@@ -58,6 +70,10 @@
         </section>
       </nav>
     </body>
+
+    <section><a href="#modal">
+      <button class="mail__btn click" onclick="toggleModal()">
+        <i class="fas fa-envelope"></i></section>
     
     
     <div class="background">
@@ -124,34 +140,92 @@
     </section>
 
     <section>
-      <div class="about">
-      <h1 class="about__name">About Select Studios</h1>
-        <p class="about__para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-          At molestiae inventore consectetur obcaecati ipsum alias aliquam. 
-          Vitae facilis aspernatur quos quasi rerum, molestias deleniti consequatur ad 
-          explicabo sint et reprehenderit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis a neque 
-          voluptatum odit tenetur hic tempore saepe laborum maiores molestiae voluptatibus at temporibus deserunt 
-          dolorum quod, aperiam, sapiente delectus accusamus.</p>
-      </div>
-    </section>
-
-    <footer>
-      <div class="container">
-        <div class="row row__column">
-          <a href="#">
-            <figure class="footer__logo">
-              <img src="./assets/Select-Studios-2d.png" class="footer__logo--img" alt="">
-            </figure>
-          </a>
-          <div class="footer__list">
-            <a href="#" class="footer__link">Home</a>
-            <a href="#" class="footer__link">About</a>
-            <a href="#Game_Libary" class="footer__link">Game Libary</a>
-            <a href="#" class="footer__link">Contact</a>
+      <div class="modal">
+        <div class="modal__half modal__about">
+          <h3 class="modal__title modal__sub-title--about">
+            Here's a bit about us.
+          </h3>
+          <h4 class="modal__sub-title modal__sub-title--about">
+            SelectStudios
+          </h4>
+          <p class="modal__para">
+            Select Studios was founded in 2020 by two programmers who met during the brackeys 2020.1 game jam.
+             Armed with nothing more than 2 computers, Unity 2019 and half a brain to share between them they 
+             later got to work on Polyshot that made it to the steam store Though many issues have occured 
+             during the lifetime of Select Studios but we're so happy to get the opportunity to work on games 
+             for everyone too (hopefully) enjoy
+          </p>
+          <div class="modal__languages">
           </div>
-          <div class="footer__copyright"> </div>
         </div>
-      </div>
-    </footer>
+        <div class="modal__half modal__contact">
+          <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+          <h3 class="modal__title modal__title--contact">Have a question or problem?</h3>
+        <form id="contact__form" onsubmit="contact(event)">
+          <div class="form__item">
+            <label class="form__item--label">Name</label>
+            <input
+            class="input"
+            name="user_name"
+            type="text"
+            name=""
+            id=""
+            required
+            ></input>
+            <div class="form__item">
+              <label class="form__item--label">Email</label>
+              <input
+              class="input"
+              name="user_email"
+              type="email"
+              name=""
+              id=""
+              required
+              ></input>
+              <div class="form__item">
+                <label class="form__item--label">Message</label>
+                <textarea
+                class="input"
+                name="user_message"
+                type="text"
+                name=""
+                id=""
+                required
+                ></textarea>
+              </div>
+              <button id="contact__submit" class="form__submit">Sent it our way</button>
+            </form>
+            <div class="modal__overlay modal__overlay--loading">
+              <i class="fas fa-spinner"></i>
+            </div>
+            
+            <div class="modal__overlay modal__overlay--success">
+              Message was sent! You will get a reply within 48hrs
+            </div>
+          </div>
+        </div>
+      </section>
+          
+      <section>
+
+        <footer>
+          <div class="container">
+              <div class="row row__column">
+                <a href="#">
+                  <figure class="footer__logo">
+                    <img src="./assets/Select-Studios-2d.png" class="footer__logo--img" alt="">
+                  </figure>
+                </a>
+                <div class="footer__list">
+                  <a href="#" class="footer__link">Home</a>
+                  <a href="#" class="footer__link">About</a>
+                  <a href="#Game_Libary" class="footer__link">Game Libary</a>
+                  <a href="#" class="footer__link">Contact</a>
+                </div>
+                <div class="footer__copyright"> </div>
+              </div>
+            </div>
+          </footer>
+        </section>
   </body>
 </html>
