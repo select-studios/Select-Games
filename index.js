@@ -11,13 +11,14 @@ function contact(event) {
       "service_yrto9fq",
       "template_p0t9eia",
       event.target,
-      "user_u34ArOptN2qv_M1Ri"
+      "u34ArOptN2qv_M1Ri"
     )
     .then(() => {
       loading.classList.remove("modal__overlay--visible");
       success.classList += " modal__overlay--visible";
     })
-    .catch(() => {
+    .catch((error) => {
+        console.log(error)
       loading.classList.remove("modal__overlay--visible");
       alert(
         "The email service is temporarily unavailable. Please contact us directly on help.selectstudios@gmail.com"
