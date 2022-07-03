@@ -1,4 +1,5 @@
 let isModalOpen = false;
+let isWatchOpen = false;
 const scaleFactor = 1 / 20;
 
 function contact(event) {
@@ -33,4 +34,13 @@ function toggleModal() {
   }
   isModalOpen = true;
   document.body.classList += " modal--open";
+}
+
+function toggleWatch() {
+    if (isWatchOpen) {
+        isWatchOpen = false;
+        return document.body.classList.remove("video--open");
+      }
+      isWatchOpen = true;
+      document.body.classList += " video--open";
 }

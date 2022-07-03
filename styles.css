@@ -563,3 +563,29 @@ h6{
   font-size: 36px;
   z-index: 100;
 }
+
+/* videos */
+
+.featured__trailer {
+  position: absolute;
+  top: -100px;
+  left: 420px;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  align-items: center;
+}
+
+.video--open .featured__trailer{
+  z-index: 60;
+  visibility: visible;
+}
+
+.video__exit {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  color: white;
+  font-size: 36px;
+  z-index: 100;
+}
