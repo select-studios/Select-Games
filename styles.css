@@ -227,7 +227,7 @@ h6{
   font-size: 30px;
   display: flex;
   justify-content: center;
-  margin-top: 500px;
+  margin-top: 600px;
 }
 
 .libary:last-child{
@@ -236,7 +236,7 @@ h6{
 
 .libary__img {
   transform: all 500ms ease;
-  width: 400px;
+  width: 600px;
   display: flex;
   justify-content: center;
   transition: 450ms ease;
@@ -265,7 +265,11 @@ h6{
 
 .libary:hover .libary__wrapper:before {
   opacity: 0.7;
-  
+
+}
+
+.libary__description--sub-title {
+  font-size: 15px;
 }
 
 .libary:hover .libary__img {
@@ -279,7 +283,7 @@ h6{
   display: flex;
   justify-content:space-around;
   list-style-type:none;
-  margin-bottom: 654px;
+  margin-bottom: 300px;
 }
 
 .libary:hover .libary__description {
@@ -589,3 +593,36 @@ h6{
   font-size: 36px;
   z-index: 100;
 }
+
+/* Words from */
+
+.column {
+  float: left;
+  width: 50%;
+}
+.words{
+  content: "";
+  display: table;
+  clear: both;
+  margin-bottom: 100px;
+}
+
+.words__sub--title {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.words__title {
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.words__para {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+
