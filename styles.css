@@ -82,14 +82,13 @@ li{
 
 /*  Header  */
  .header {   
- 
-  padding: .5em 1em;  
+  padding: 0.5em 1em;
   display: flex;  
   justify-content: space-between;  
  }  
 
  .header-identity h1 {  
-  font-size: 1.5em;  
+  font-size: 1.5;  
   margin: .6em 0;  
   display: inline-block;  
  }  
@@ -281,6 +280,7 @@ h6{
 .libary__list{
   padding-top: 40px;
   display: flex;
+  margin-left: -60px;
   justify-content:space-around;
   list-style-type:none;
   margin-bottom: 300px;
@@ -305,6 +305,7 @@ h6{
 .libary__description--title {
   font-size: 40px;
 }
+
 .libary__description--link {
   font-size: 20px;
   margin-right: 16px;
@@ -600,6 +601,7 @@ h6{
   float: left;
   width: 50%;
 }
+
 .words{
   content: "";
   display: table;
@@ -626,3 +628,165 @@ h6{
   justify-content: center;
 }
 
+/* large phones */
+@media (max-width: 768px) {
+
+
+  .header{
+    font-size: 15px;
+
+  }
+
+  .header__img{
+    width: 200px;
+  }
+
+  .title{
+    font-size: 40px;
+  }
+
+  .main{
+    margin-right: 70px;
+  }
+
+  .header__para {
+    font-size: 18px;
+  }
+  .nav__link:first-child {
+    display: none;
+  }
+  .libary__description--para {
+    display: none;
+  }
+  .libary__description {
+    left: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .libary__description--sub-title {
+    margin-bottom: 8px;
+    margin-left: 30px;
+  }
+  .modal__half {
+    padding: 40px;
+  }
+
+  .libary__list{
+    display: block;
+  }
+  
+  .libary__wrapper{
+    margin-bottom: 50px;
+    width: fit-content;
+    height: fit-content;
+  }
+
+  .libary__description--title {
+    margin-left: 25px;
+  }
+
+  .words{
+    content: "";
+    display: table;
+    clear: both;
+    margin-bottom: 100px;
+  }
+
+  .words__title {
+    font-size: 40px;
+  }
+  
+  .words__para {
+    font-size: 15px;
+  }
+
+  .words__sub--title {
+    font-size: 30px;
+  }
+}
+
+
+/* Small phones */
+@media (max-width: 480px) {
+  
+
+  .header{
+    font-size: 9px;
+  }
+
+  .header__img{
+    width: 100px;
+  }
+
+  .title{
+    font-size: 25px;
+    margin-left: 10px;
+  }
+
+  .main{
+    margin-right: 10px;
+  }
+
+  .header__para {
+    font-size: 18px;
+  }
+
+  .libary__description--title {
+    font-size: 20px;
+  }
+  .libary__description {
+    left: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .libary__description--sub-title {
+    font-size: 10px;
+    margin-bottom: 8px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .modal__half {
+    padding: 10px;
+  }
+
+  .libary__list{
+    display: block;
+  }
+  
+  .libary__wrapper{
+    margin-bottom: 50px;
+    width: fit-content;
+    height: fit-content;
+  }
+
+  .libary__description--title {
+    margin-left: 25px;
+  }
+
+  .libary__img {
+    width: 340px;
+  }
+
+  .words
+  {
+    content: "";
+    display: table;
+    clear: both;
+    margin-bottom: 100px;
+  }
+
+  .words__title {
+    font-size: 30px;
+  }
+  
+  .words__para {
+    font-size: 15px;
+  }
+
+  .words__sub--title {
+    font-size: 20px;
+  }
+
+}
