@@ -789,4 +789,30 @@ h6{
     font-size: 20px;
   }
 
+  .mail__btn{
+    width: 70px;
+    height: 70px;
+    font-size: 32px;
+    border-radius: 50%;
+    border: none;
+    background-color: #242424;
+    color: white;
+    position: absolute;
+    bottom: 1100px;
+    right: 1300px;
+    position: fixed;
+    z-index: 30;
+  }
+
+  .parallax {
+
+    background-image: url("./assets/smooth-gradient-background.jpg");
+  
+    min-height: 1px;
+  
+    background-attachment: local;
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+
 }
