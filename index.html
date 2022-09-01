@@ -1,16 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blocked Page</title>
+    <title>Select Studios </title>
     <link rel="stylesheet" href="styles.css" />
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
-  </head>
+    <link rel="icon" href="assets/Icon.png">
 
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script src="index.js"></script>
+
+        <script type="text/javascript">
+            (function(){
+        emailjs.init("xQSpdFB7w9odOlwhR");
+    })();
+  </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-206898744-1">
+    </script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-206898744-1');
+    </script>
+
+  </head>
   <body>
+
     <body>
       <nav class="site-navigation">
         <section class="header">
@@ -24,53 +47,217 @@
             </a>
           </div>
           <ul>
+            <li>
+              <a
+                href="#Game_Libary"
+                class="header__button header__button-effect header__button-effect--white"
+                >Game Libary</a
+              >
+            </li>
+            <li>
+              <a
+                href="Blog.html"
+                class="header__button header__button-effect header__button-effect--white"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                href="Backspace.html"
+                class="header__button header__button-effect header__button-effect--white"
+                >Backspace</a
+              >
+            </li>
+            <li><a href="Launcher.html" class="header__button--main">Get Launcher</a></li>
           </ul>
         </section>
       </nav>
     </body>
+
+    <section><a href="#">
+      <button class="mail__btn click" onclick="toggleModal()">
+        <i class="fas fa-envelope"></i></section>
     
     
     <div class="background">
       <section class="main">
-        <div class="title" >
-          <h1 style="color: white;">This page is locked</h1>
-          <h6> Check our Twitter for updates (@SMSelectStudios)</h6>
-          <h6 style="padding-top: 125px;;"> 
-          </h6>
+        <div class="title">
+          <h6><span class="yellow">Select Studios</span>.</h6>
+          <h1>Whole new launcher coming soon!</h1>
+          <button onclick="toggleWatch()" class="main__redirect click">See our latest game</button>
+          </div>
+          <body class="parallax" background="assets/smooth-gradient-background.jpg">
+          </div>
+        </section>
+        
+        <section>          
+            <div class="featured__trailer">
+              <i onclick="toggleWatch()" class="fas fa-times video__exit click"></i>
+            <video width="1280" height="720" controls>
+              <source src="assets/Ace Race - Official Trailer.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </section>
 
-
-          
-        </div>
-        <body background="assets/PageLocked.png">
-      </div>
-    </section>
-
-    <section id="">
-      <h1 class="libary__name"></h1>
+    <section id="Game_Libary">
+      <h1 class="libary__name">Featured Games</h1>
       <div class="libary__title">
         <ul class="libary__list">
           <li class="libary">
+            <div class="libary__wrapper">
+              <img src="./assets/Games/NoGame.png" class="libary__img" alt="Rythm run">
+              <div class="libary__description">
+                <h3 class="libary__description--title">Rythm Run</h3>
+                <h4 class="libary__description--sub-title"></h4>
+                </h4>
+                  <div class="libary__description--links">
+                    <a href="https://selectstudios.itch.io/acerace" target="_blank"
+                    class="libary__description--link">
+                    <i class="fa fa-link" aria-hidden="true"></i>
+                  </a>
+                </div>
+            </li>
 
+          <li class="libary">
+            <div class="libary__wrapper">
+              <img src="./assets/Games/NoGame.png" class="libary__img" alt="ramrage">
+              <div class="libary__description">
+                <h3 class="libary__description--title">Ram Rage</h3>
+                <h4 class="libary__description--sub-title"></h4>
+                  <div class="libary__description--links">
+                  </h4>
+                    <a href="Rosehill.html" target="_blank"
+                    class="libary__description--link">
+                    <i class="fa fa-link" aria-hidden="true"></i>
+                  </a>
+                </div>
+            </li>
+
+            <li class="libary">
+              <div class="libary__wrapper">
+                <img src="./assets/Games/NoGame.png" class="libary__img" alt="No game just yet!">
+                <div class="libary__description">
+                  <h3 class="libary__description--title"></h3>
+                  <h4 class="libary__description--sub-title">
+                    <div class="libary__description--links">
+                    </h4>
+                      <a href="Rosehill.html" target="_blank"
+                      class="libary__description--link">
+                      <i class="fa fa-link" aria-hidden="true"></i>
+                    </a>
+                  </div>
+              </li>
+          </ul>
       </div>
     </section>
 
-    <footer>
-      <div class="container">
-        <div class="row row__column">
-          <a href="#">
-            <figure class="footer__logo">
-              <img src="./assets/Select-Studios-2d.png" class="footer__logo--img" alt="">
-            </figure>
-          </a>
-          <div class="footer__list">
-            <a href="#" class="footer__link">Home</a>
-            <a href="#" class="footer__link">About</a>
-            <a href="#Game_Libary" class="footer__link">Game Libary</a>
-            <a href="#" class="footer__link">Contact</a>
+    <section>
+      <div class="modal">
+        <div class="modal__half modal__about">
+          <h3 class="modal__title modal__sub-title--about">
+            Here's a bit about us.
+          </h3>
+          <h4 class="modal__sub-title modal__sub-title--about">
+            SelectStudios
+          </h4>
+          <p class="modal__para">
+            Select Studios was founded in 2020 by two programmers who met during the brackeys 2020.1 game jam.
+             Armed with nothing more than 2 computers, Unity 2019 and half a brain to share between them they 
+             later got to work on Polyshot that made it to the steam store Though many issues have occured 
+             during the lifetime of Select Studios but we're so happy to get the opportunity to work on games 
+             for everyone too (hopefully) enjoy
+          </p>
+          <div class="modal__languages">
           </div>
-          <div class="footer__copyright"> </div>
         </div>
-      </div>
-    </footer>
+        <div class="modal__half modal__contact">
+          <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+          <h3 class="modal__title modal__title--contact">Have a question or problem?</h3>
+        <form id="contact__form" onsubmit="contact(event)">
+          <div class="form__item">
+            <label class="form__item--label">Name</label>
+            <input
+            class="input"
+            name="user_name"
+            type="text"
+            name=""
+            id=""
+            required
+            ></input>
+            <div class="form__item">
+              <label class="form__item--label">Email</label>
+              <input
+              class="input"
+              name="user_email"
+              type="email"
+              name=""
+              id=""
+              required
+              ></input>
+              <div class="form__item">
+                <label class="form__item--label">Message</label>
+                <textarea
+                class="input"
+                name="user_message"
+                type="text"
+                name=""
+                id=""
+                required
+                ></textarea>
+              </div>
+              <button id="contact__submit" class="form__submit">Sent it our way</button>
+            </form>
+            <div class="modal__overlay modal__overlay--loading">
+              <i class="fas fa-spinner"></i>
+            </div>
+            
+            <div class="modal__overlay modal__overlay--success">
+              Message was sent! <br> You will get a reply within 48hrs
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="words">
+        <div class="words">
+          <h4 class="words__title"><strong>Words from the founders</strong></h4>
+          <div class="column">
+            <h5 class="words__sub--title"><strong>Myles "Mellurboo" Wilson:</strong></h5>
+            <h6 class="words__para">"When we created Select Studios we have an idea and we ran with it the only thing we could've predicted
+              is the fun that we have had doing it, if someone told me they wanted to start their own game developement studio I'd first tell them to buy hair dye because this
+              is stressful. on a serious note I love select studios and what we do"</h6>
+            </div>
+              <div class="column">
+                <h5 class="words__sub--title"><strong>Lucas "LTXN" Georgy</strong></h5>
+                <h6 class="words__para">"Coming into Select Studios i thought we wouldnt have gotten far having these massive ideas
+                  we had, kept getting burnt out after awhile we made no progress on games got bored and didnt feel like continuing 
+                  after a long while here we are we learnt alot from those games. and now here we are Select Studios is going 
+                  great cant wait for our future."
+                </h6>
+            </div>
+          </div>
+      </section>
+    
+      <section>
+        <footer>
+          <div class="container">
+              <div class="row row__column">
+                <figure class="footer__logo">
+                    <a href="#">
+                    <img src="./assets/Select-Studios-2d.png" class="footer__logo--img" alt="">
+                  </figure>
+                </a>
+                <div class="footer__list">
+                  <a href="#" class="footer__link">Home</a>
+                  <a href="#" class="footer__link">About</a>
+                  <a href="#Game_Libary" class="footer__link">Game Libary</a>
+                  <a href="#" class="footer__link">Contact</a>
+                </div>
+                <div class="footer__copyright"> </div>
+              </div>
+            </div>
+          </footer>
+        </section>
   </body>
 </html>
