@@ -91,12 +91,12 @@
 }
 
 .button:hover{
-    background: rgb(94, 102, 255);
+    background: rgb(255, 94, 94);
     transition: all 0.4s ease;
 }
 
 .navbar__links:hover{
-    color: rgb(73, 136, 255);
+    color: rgb(255, 73, 73);
     transition: all 0.4s ease;
 }
 
