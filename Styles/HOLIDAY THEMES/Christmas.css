@@ -30,8 +30,8 @@
 }
 
 #navbar__logo{
-    background-color: #7285ee;
-    background-image: linear-gradient(to top, #566bf3 0%, #616ddd 100%);
+    background-color: #ffb1b1;
+    background-image: linear-gradient(to top, #126a00 0%, #00c317 100%);
     font-weight: bold;
     background-size: 100%;
     -webkit-background-clip: text;
@@ -86,17 +86,17 @@
     border: none;
     outline: none;
     border-radius: 4px;
-    background: #6282f7;
+    background: #008707;
     color: #fff;
 }
 
 .button:hover{
-    background: rgb(94, 102, 255);
+    background: rgb(118, 215, 44);
     transition: all 0.4s ease;
 }
 
 .navbar__links:hover{
-    color: rgb(73, 136, 255);
+    color: rgb(84, 239, 57);
     transition: all 0.4s ease;
 }
 
@@ -133,7 +133,7 @@
         height: 25px;
         margin: 5px;
         transition: all 0.3s ease-in-out;
-        background: #fff;
+        background: rgb(255, 255, 255);
     }
 
     .navbar__item{
@@ -186,8 +186,8 @@
 
 .main__container h1{
     font-size: 3.5rem;
-    background-color: #6282f7;
-    background-image: linear-gradient(to top, #435cff 0%, #2d46d6 100%);
+    background-color: #ffffff;
+    background-image: linear-gradient(to top, #fd7f7f 0%, #f64646 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -199,7 +199,7 @@
 .main__content h2{
     font-size: 3.3rem;
     background-color: #9f9f9f;
-    background-image: linear-gradient(to top, #355ecf 0%, #235ebe 100%);
+    background-image: linear-gradient(to top, #ff8282 0%, #ffdbdb 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -218,7 +218,7 @@
 
 .main__btn{
     font-size: 1rem;
-    background-image: linear-gradient(to top, #566bf3 0%, #616ddd 100%);
+    background-image: linear-gradient(to top, #fa7f7f 0%, #e36161 100%);
     padding: 14px 32px;
     border: none;
     border-radius: 4px;
@@ -245,13 +245,13 @@
     left: 0;
     width: 0;
     height: 100%;
-    background: #3f4ffa;
+    background: #f88080;
     transition: all 0.35s;
     border-radius: 4px;
 }
 
 .main__btn:hover{
-    color: #fff;
+    color: rgb(255, 120, 120);
 }
 
 .main__btn:hover:after{
