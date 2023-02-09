@@ -30,8 +30,8 @@
 }
 
 #navbar__logo{
-    background-color: #9293ff;
-    background-image: linear-gradient(to top, #9d8eff 0%, #ff8dec 100%);
+    background-color: #7285ee;
+    background-image: linear-gradient(to top, #ff62fa 0%, #7461dd 100%);
     font-weight: bold;
     background-size: 100%;
     -webkit-background-clip: text;
@@ -86,17 +86,17 @@
     border: none;
     outline: none;
     border-radius: 4px;
-    background: #f76262;
+    background: #8b68ff;
     color: #fff;
 }
 
 .button:hover{
-    background: rgb(255, 185, 241);
+    background: rgb(255, 145, 240);
     transition: all 0.4s ease;
 }
 
 .navbar__links:hover{
-    color: rgb(175, 163, 255);
+    color: rgb(255, 145, 253);
     transition: all 0.4s ease;
 }
 
@@ -171,24 +171,23 @@
 
 /* hero shit*/
 
-body {
-    background-color: #141414;
-}
-
 
 .main__container{
-/*Nothing cause its kinda like a document thing
-Theres probably a better way to do this but im not a web developer
-im a game developer relax LMAO
-
-~Mellurboo
-*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0;
+    height: 90vh;
+    /*background-color: #141414; */
+    z-index: 1;
+    width: 100%;
 }
 
 .main__container h1{
     font-size: 3.5rem;
-    background-color: #ffa6fe;
-    background-image: linear-gradient(to top, #b3a1ff 0%, #ff95ff 100%);
+    background-color: #6282f7;
+    background-image: linear-gradient(to top, #ff91f8 0%, #9591ff 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -200,7 +199,7 @@ im a game developer relax LMAO
 .main__content h2{
     font-size: 3.3rem;
     background-color: #9f9f9f;
-    background-image: linear-gradient(to top, #cf3535 0%, #be2323 100%);
+    background-image: linear-gradient(to top, #355ecf 0%, #235ebe 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -213,13 +212,13 @@ im a game developer relax LMAO
     margin-top: 1rem;
     font-size: 2rem;
     font-weight: 700;
-    color: rgb(214, 214, 214);
+    color: rgb(250, 232, 255);
     padding-left: 25px;
 }
 
 .main__btn{
     font-size: 1rem;
-    background-image: linear-gradient(to top, #f35656 0%, #dd6161 100%);
+    background-image: linear-gradient(to top, #566bf3 0%, #616ddd 100%);
     padding: 14px 32px;
     border: none;
     border-radius: 4px;
@@ -246,7 +245,7 @@ im a game developer relax LMAO
     left: 0;
     width: 0;
     height: 100%;
-    background: #fa3f3f;
+    background: #3f4ffa;
     transition: all 0.35s;
     border-radius: 4px;
 }
