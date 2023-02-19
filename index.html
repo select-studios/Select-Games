@@ -1,13 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>were working on some things!</h1>
-    <p>we will be back shortly.</p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="#home" id="navbar__logo">Select Studios</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="#home" class="navbar__links" id="home-page">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#games" class="navbar__links" id="about-page">Games</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#about" class="navbar__links" id="games-page"
+              >About</a
+            >
+          </li>
+          <li class="navbar__btn">
+            <a href="#sign-up" class="button" id="signup">Select Launcher</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+      <div class="hero__container">
+        <h1 class="hero__heading">Select Studios <span>Launcher</span></h1>
+        <p class="hero__description">You want to play, lets play</p>
+        <button class="main__btn"><a href="#">Download Now</a></button>
+      </div>
+    </div>
+
+        <!-- games Section -->
+        <div class="games" id="games">
+          <h1>Our games</h1>
+          <div class="games__wrapper">
+            <div class="games__card">
+              <h2>Rosehill Academy</h2>
+              <p>Story Horror Game</p>
+              <div class="games__btn"><button>Download</button></div>
+            </div>
+            <div class="games__card">
+              <h2>AceRace</h2>
+              <p>Fast 3D Platformer</p>
+              <div class="games__btn"><button>Download</button></div>
+            </div>
+            <div class="games__card">
+              <h2>Unnamed</h2>
+              <p>Tactical 2D Zombie Survival</p>
+              <div class="games__btn"><button>Download</button></div>
+            </div>
+            <div class="games__card">
+              <h2>Select Launcher</h2>
+              <p>We're all of our games (and more) are found!</p>
+              <div class="games__btn"><button>Download</button></div>
+            </div>
+          </div>
+        </div>
+
+    <!-- About Section -->
+    <div class="main" id="about">
+      <div class="main__container">
+        <div class="main__img--container">
+          <div class="main__img--card"><i class="fa fa-10x fa-chess-knight"></i></div>
+        </div>
+        <div class="main__content">
+          <h1>Who are we?</h1>
+          <h2>Game Devs, Software Engineers</h2>
+          <p>We make games and software, our goal is to keep everything enjoyable and collect 0 Telemetry data for maximum privacy</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="main" id="sign-up">
+      <div class="main__container">
+        <div class="main__content">
+          <h1>Introduce your Games!</h1>
+          <h2>Do you have a Game?</h2>
+          <p>Apply for your game to appear on the select launcher and get all the benefits that come with it!</p>
+          <button class="main__btn"><a href="#">Apply</a></button>
+        </div>
+        <div class="main__img--container">
+          <div class="main__img--card" id="card-2">
+            <i class="fas fa-10x fa-address-book"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="main" id="contact-page">
+      <div class="main__container">
+        <div class="main__content">
+          <h1>Need our help?</h1>
+          <h2>Feel free to contact us</h2>
+          <p>Business Related -> business.selectstudios@gmail.com</p>
+          <p>Anything else -> help.selectstudios@gmail.com</p> 
+          <button class="main__btn"><a href="https://www.discord.gg/n3ebG4HKra">Join our Discord</a></button>
+        </div>
+        <div class="main__img--container">
+          <div class="main__img--card" id="card-3">
+            <i class="fas fa-10x fa-mail-bulk"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer__container">
+      <div class="footer__links">
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>Contact Us</h2>
+            <a>help.selectstudios @gmail.com</a>
+            <a href="https://www.discord.gg/n3ebG4HKra">discord</a>
+          </div>
+        </div>
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>Social Media</h2>
+            <a href="https://www.instagram.com/selectstudiosofficial/">Instagram</a>
+            <a href="youtube.com/@selectstudios">Youtube</a> <a href="https://twitter.com/SMSelectStudios">Twitter</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
 </html>

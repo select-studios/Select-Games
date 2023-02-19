@@ -15,7 +15,8 @@ const highlightMenu = () => {
   const elem = document.querySelector('.highlight');
   const homeMenu = document.querySelector('#home-page');
   const aboutMenu = document.querySelector('#about-page');
-  const servicesMenu = document.querySelector('#services-page');
+  const servicesMenu = document.querySelector('#games-page');
+  const contactMenu = document.querySelector('#contact-page');
   let scrollPos = window.scrollY;
   // console.log(scrollPos);
 
@@ -32,6 +33,7 @@ const highlightMenu = () => {
   } else if (window.innerWidth > 960 && scrollPos < 2345) {
     servicesMenu.classList.add('highlight');
     aboutMenu.classList.remove('highlight');
+    homeMenu.classList.remove('highlight');
     return;
   }
 
