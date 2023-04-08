@@ -232,10 +232,10 @@
 }
 
 .hero__description {
-  font-size: 60px;
+  font-size: 45px;
   background: #BA5370;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #ec668c, #BA5370);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #b3b3b3, #a9a9a9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #fde7ff, #ffedfc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   
   background-size: 100%;
   -webkit-background-clip: text;
