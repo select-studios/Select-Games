@@ -19,7 +19,7 @@
 }
 
 .navbar p {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   font-size: 1.3rem;
   font-weight: 400;
   color: whitesmoke;
@@ -206,8 +206,26 @@
 .hero {
   background: #000000;
   background: linear-gradient(to top, #101010, #0c0c0c);
-  padding: 200px 0;
+  padding: 50px 0;
 }
+
+.bannar {
+  background: #6a1717;
+  background: linear-gradient(to top, #8b1111, #8b1111);
+  padding: 10px 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bannar h1 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+
 
 .hero__container {
   display: flex;
@@ -466,7 +484,7 @@
 }
 
 /* games Section */
-.help {
+.issues {
   background: #131313;
   display: flex;
   flex-direction: column;
@@ -476,7 +494,30 @@
   padding: 10rem 0;
 }
 
-.help h1 {
+.issues__btn {
+  font-size: 1.4rem;
+  background: #e94354;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #954e50, #a01d31);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #954e4e, #8b2727); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  padding: 10px 50px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 2rem;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.35s;
+  outline: none;
+}
+
+.issues__btn a {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-decoration: none;
+}
+
+.issues h1 {
   background-color: #ff8177;
   background-image: linear-gradient(to right, #d0d0d0, #dadada 100%);
   background-size: 100%;
@@ -488,14 +529,14 @@
   font-size: 2.5rem;
 }
 
-.help p {
+.issues p {
   margin-top: 0.5rem;
   font-size: 1.3rem;
   font-weight: 400;
   color: whitesmoke;
 }
 
-.help li{
+.issues li{
   margin-top: 0.5rem;
   font-size: 1.3rem;
   font-weight: 400;
