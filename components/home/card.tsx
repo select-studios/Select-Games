@@ -1,3 +1,4 @@
+import Image from "next/image";
 import ReactMarkdown from "react-markdown";
 import Balancer from "react-wrap-balancer";
 
@@ -5,10 +6,12 @@ export default function Card({
   title,
   description,
   large,
+  image,
 }: {
   title: string;
   description: string;
   large?: boolean;
+  image?: string;
 }) {
   return (
     <div
@@ -16,11 +19,11 @@ export default function Card({
         large ? "md:col-span-2" : ""
       }`}
     >
-      <div className="mx-auto max-w-md text-center">
-        <h2 className="bg-gradient-to-br from-black to-stone-500 bg-clip-text font-display text-xl font-bold text-transparent md:text-3xl md:font-normal">
+      <div className="mx-auto mt-5 max-w-md text-center">
+        <h2 className="bg-gradient-to-br from-black to-stone-500 bg-clip-text font-display text-xl font-semibold text-transparent md:text-3xl">
           <Balancer>{title}</Balancer>
         </h2>
-        <div className="prose-sm -mt-2 leading-normal text-gray-500 md:prose">
+        <div className="prose-sm -mt-2 leading-normal text-gray-600 md:prose-lg">
           <Balancer>
             <ReactMarkdown
               components={{
@@ -45,6 +48,16 @@ export default function Card({
               {description}
             </ReactMarkdown>
           </Balancer>
+        </div>
+        <div>
+          <Image
+            width="0"
+            height="0"
+            sizes="100vw"
+            className="h-auto w-full"
+            src={image || ""}
+            alt={`${title} Image`}
+          />
         </div>
       </div>
     </div>

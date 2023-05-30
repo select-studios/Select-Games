@@ -1,7 +1,7 @@
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import cx from "classnames";
-import { sfPro, inter } from "./fonts";
+import { sfPro, inter, montserrat } from "./fonts";
 import Nav from "@/components/layout/nav";
 import Footer from "@/components/layout/footer";
 import { Suspense } from "react";
@@ -20,7 +20,7 @@ export default async function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={cx(sfPro.variable, inter.variable)}>
+      <body className={cx(sfPro.variable, montserrat.variable)}>
         <div className="fixed h-screen w-full bg-gradient-to-br from-purple-200 via-white to-blue-200" />
         <Suspense fallback="...">
           {/* @ts-expect-error Server Component */}
