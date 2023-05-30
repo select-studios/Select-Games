@@ -9,7 +9,7 @@ import { Suspense } from "react";
 export const metadata = {
   title: "Select Studios - The future begins now",
   description:
-    "the select launcher allows indie devs to grow giving them a platform to grow a community along side us.",
+    "Select Launcher allows indie devs to grow giving them a platform to grow a community along side us.",
   themeColor: "#fff",
 };
 
@@ -22,8 +22,8 @@ export default async function RootLayout({
     <html lang="en">
       <body className={cx(sfPro.variable, montserrat.variable)}>
         <div className="fixed h-screen w-full bg-gradient-to-br from-purple-200 via-white to-blue-200" />
-        <Suspense fallback="...">
-        </Suspense>
+        <Suspense fallback="..."></Suspense>
+        <Nav session={null} />
         <main className="flex min-h-screen w-full flex-col items-center justify-center py-32">
           {children}
         </main>
